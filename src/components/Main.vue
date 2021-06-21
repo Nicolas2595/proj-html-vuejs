@@ -147,9 +147,74 @@
        <p class="wrapper_60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat assumenda earum aperiam dicta veritatis ex, sequi est labo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quos? Modi exercitationem voluptas quisquam tempore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, dolorum. </p>
        <img class="play_icon" src="../assets/img/play-icon.png" alt="icon">
     </div>
+
+    <div class="main_tour_bottom">
+
+      <div class="main_tour_bottom_left">
+        <h5 class="wrapper_60">EMERGENCY CARE</h5>
+        <img src="../assets/img/wave-divider.png" alt="wawe">
+        <p class="wrapper_60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, voluptate.</p>
+        <button class="wrapper_60">
+          Learn More
+        </button>
+      </div>
+
+      <div class="main_tour_bottom_center">
+        <h5 class="wrapper_60">EXPERT DIAGNOSTIC</h5>
+        <img src="../assets/img/wave-divider.png" alt="wawe">
+        <p class="wrapper_60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, voluptate.</p>
+        <button class="wrapper_60">
+          Learn More
+        </button>
+      </div>
+
+      <div class="main_tour_bottom_right">
+        <h5 class="wrapper_60">SUPERB RHEABILITATION</h5>
+        <img src="../assets/img/wave-divider.png" alt="wawe">
+        <p class="wrapper_60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, voluptate.</p>
+        <button class="wrapper_60">
+          Learn More
+        </button>
+      </div>
+
+    </div>
   <!-- fine main tour -->
 
-    <div class="main_make"></div></div>
+    <!-- Inizio main make -->
+      <div class="main_make">
+        <h2 class="wrapper_60">MAKE AN APPOINTMENT</h2>
+        <p class="wrapper_60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat assumenda earum aperiam dicta veritatis ex, sequi est labo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quos? Modi exerci</p>
+        <input class="name" type="text" value="name*">
+        <input class="email" type="text" value="Email*">
+        <input class="phone" type="text" value="Phone number">
+        <input class="date" type="text" value="date">
+        <input class="help" type="text" value="help">
+        <button>
+          MAKE AN APPOINTMENT
+        </button>
+      </div>
+
+      <div class="main_make_bottom">
+           <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-3 col-lg-3">
+                        <img src="../assets/img/client-logos-1.png" alt="logos">
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-lg-3">
+                        <img src="../assets/img/client-logos-2.png" alt="logos">
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-lg-3">
+                        <img src="../assets/img/client-logos-3.png" alt="logos">
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-lg-3">
+                        <img src="../assets/img/client-logos-4.png" alt="logos">
+                    </div>
+                </div>
+            </div>
+      </div>
+      <!-- Fine main make -->
+  </div>
+
 </template>
 
 <script>
@@ -285,7 +350,7 @@ export default {
 // Inizio main tour
 .main_tour {
   background: url('../assets/img/paralax-bg-tour-facilities.jpg');
-  height: 600px;
+  height: 550px;
   width: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -316,5 +381,193 @@ export default {
     margin-top: 50px;
   }
 }
+
+.main_tour_bottom {
+  height: 300px;
+  background-color: red;
+  display: flex;
+}
+
+.main_tour_bottom_left {
+  height: 100%;
+  width: 33.33%;
+  background-color: #39afbb;
+
+    img {
+      margin-left: 240px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 150px;
+      padding: 5px;
+      margin-left: 200px;
+      margin-top: 30px;
+      background-color: #39afbb;
+      border: 2px solid white;
+    }
+
+    h5 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    p {
+      text-align: center;
+    }
+}
+
+.main_tour_bottom_center {
+  height: 100%;
+  width: 33.33%;
+  background-color: #3ba5bd;
+
+     img {
+      margin-left: 240px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 150px;
+      padding: 5px;
+      margin-left: 200px;
+      margin-top: 30px;
+      background-color: #3ba5bd;
+      border: 2px solid white;
+    }
+
+    h5 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    p {
+      text-align: center;
+    }
+}
+
+.main_tour_bottom_right {
+  height: 100%;
+  width: 33.33%;
+  background-color: #449ebf;
+
+       img {
+      margin-left: 240px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 150px;
+      padding: 5px;
+      margin-left: 200px;
+      margin-top: 30px;
+      background-color: #449ebf;
+      border: 2px solid white;
+    }
+
+    h5 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    p {
+      text-align: center;
+    }
+}
 // Fine main tour
+
+// Inizio main make
+.main_make {
+    background: url('../assets/img/make-an-appointment.jpg');
+    height: 600px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+      h2 {
+        text-align: center;
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 30px;
+      }
+
+      p {
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+      }
+
+      .name {
+        background-color: transparent;
+        width: 200px;
+        padding: 6px;
+        border: 1px solid white;
+        color: white;
+        margin-left: 650px;
+
+      }
+
+      .email {
+        width: 200px;
+        background-color: transparent;
+        padding: 6px;
+        border: 1px solid white;
+        color: white;
+        margin-left: 50px;
+      }
+
+      .phone {
+        width: 200px;
+        background-color: transparent;
+        padding: 6px;
+        border: 1px solid white;
+        color: white;
+        margin-left: 650px;
+        margin-top: 30px;
+        margin-right: 50px;
+      }
+
+      .date {
+        width: 200px;
+        background-color: transparent;
+        padding: 6px;
+        border: 1px solid white;
+        color: white;
+      }
+
+      .help {
+        width: 450px;
+        height: 100px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid white;
+        color: white;
+        display: block;
+        margin-left: 650px;
+        margin-top: 20px;
+      }
+
+      button {
+        width: 450px;
+        margin-left: 650px;
+        margin-top: 30px;
+        background-color: #18c4d8;
+      }
+}
+
+.main_make_bottom {
+  height: 250px;
+  background: url('../assets/img/rgb-gradient-bar-for-logo-carrasel.jpg');
+  background-size: cover;
+
+    img {
+      height: 200px;
+    }
+}
+// Fine main make
+
 </style>
