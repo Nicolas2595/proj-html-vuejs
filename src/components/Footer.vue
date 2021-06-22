@@ -80,6 +80,7 @@
       <span>Avada Theme by Theme fusion</span>
       <span>All rights reserved</span>
       <span>Powered by WordPress</span>
+      <span class="angle"><i class="fas fa-angle-up"></i></span>
     </div>
 
   </div>
@@ -122,9 +123,8 @@ export default {
       list-style: none;
 
           i {
-          margin: 10px;
-
-         
+          margin: 6px;
+          font-size: 26px;
         }
     }
   }
@@ -221,11 +221,26 @@ img {
   background-color: lightgray;
   height: 50px;
   line-height: 50px;
+  position: relative;
 
     span {
       border-right: 1px solid grey;
       padding-right: 10px;
       padding-left: 5px;
+    }
+
+    .angle {
+      position: absolute;
+      right: 100px;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      height: 30px;
+      width: 40px;
+
+        i {
+          margin-left: 10px;
+        }
     }
 }
 

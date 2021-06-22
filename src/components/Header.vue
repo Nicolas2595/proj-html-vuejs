@@ -7,9 +7,11 @@
           </div>
 
           <div class="header_link">
-              <ul>
+              <!-- statico -->
+
+              <!-- <ul>
                   <li>
-                      <a href="#" class="active">Home</a>
+                      <a href="#">Home</a>
                   </li>
                    <li>
                       <a href="#">About</a>
@@ -21,9 +23,20 @@
                       <a href="#">Articles</a>
                   </li>
                    <li>
-                      <a href="#">Make Appointment</a>
+                      <a href="#" class="active">Make Appointment</a>
+                  </li>
+              </ul> -->
+
+              <!-- dinamico -->
+
+              <ul>
+                  <li v-for="(link, index) in links" :key="index">
+                      <a :href="link.url" :class="{active: link.current}">
+                          {{ link.text }}
+                      </a>
                   </li>
               </ul>
+
           </div>
           
       </div>
@@ -41,7 +54,39 @@
 
 <script>
 export default {
-    name: "Header"
+    name: "Header",
+    data: function() {
+        return {
+            links: [
+                {
+                    text: "HOME",
+                    url: "#home",
+                    current: false
+                },
+                {
+                    text: "ABOUT",
+                    url: "#about",
+                    current: false
+                },
+                {
+                    text: "DEPARTMENTS",
+                    url: "#departments",
+                    current: false
+                },
+                {
+                    text: "ARTICLES",
+                    url: "#articles",
+                    current: false
+                },
+                {
+                    text: "MAKE APPOINTMENT",
+                    url: "#make appointment",
+                    current: true
+                }
+
+            ]
+        }
+    }
 }
 </script>
 
@@ -71,21 +116,21 @@ export default {
 
                     list-style: none;
 
-                    a{
+                    a {
                         text-decoration: none;
                         color: white;
                         font-size: 15px;
                         margin-right: 10px;
                     }
 
-                    &:last-child {
-                            background-color: #3ba5bd;
-                            padding: 2px;
-                        }
+                    &:hover {
+                        background-color: #3ba5bd;
+                    }
 
                     .active {
-                        color: #3ba5bd;
+                        background-color: #3ba5bd;
                     }
+
                 }
             }
         }
@@ -130,8 +175,6 @@ export default {
         }
        
     }
-
-    
 }
 
 </style>

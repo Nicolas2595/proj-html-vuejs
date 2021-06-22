@@ -75,7 +75,7 @@
                         <img src="../assets/img/doctor-3.jpg" alt="doctor">
                         <h5>ANNA SMITH</h5>
                         <h6>Nurse</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, nobis. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, suscipit. </p>
                         <ul>
                           <li>
                            <a href="#">

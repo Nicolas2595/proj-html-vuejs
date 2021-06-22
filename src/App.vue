@@ -33,6 +33,9 @@ export default {
 
 @import '~bootstrap/scss/bootstrap';
 
+@import "~@fontsource/roboto/index.css";
+@import "~@fontsource/roboto/700.css";
+
 * {
   box-sizing: border-box;
   position: 0;
