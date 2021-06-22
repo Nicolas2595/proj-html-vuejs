@@ -560,7 +560,7 @@ export default {
 }
 
 .main_make_bottom {
-  height: 250px;
+  height: 200px;
   background: url('../assets/img/rgb-gradient-bar-for-logo-carrasel.jpg');
   background-size: cover;
 
